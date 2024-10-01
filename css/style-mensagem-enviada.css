@@ -1,0 +1,22 @@
+#box-main {
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #4ef54b;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(79, 79, 79);
+}
+
+@media screen and (max-width:500px) {
+    #box-main {
+        width: auto;
+        margin: 5px;
+        font-size: 1rem;
+    }
+}

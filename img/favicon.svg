@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="144" height="144" viewBox="0 0 144 144">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        filter: url(#filter);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="70.5" cy="72.5" r="65.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#32b7b6"/>
+      <stop offset="0.5" stop-color="#3581a5"/>
+      <stop offset="1" stop-color="#425389"/>
+    </radialGradient>
+    <filter id="filter" x="18" y="37" width="104" height="86" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="5" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#484c49" flood-opacity="0.75"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feGaussianBlur result="blur-2" stdDeviation="2.333" in="SourceAlpha"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feComposite result="composite-4"/>
+      <feFlood result="flood-2" flood-color="#fff" flood-opacity="0.17"/>
+      <feComposite result="composite-5" operator="in" in2="composite-4"/>
+      <feBlend result="blend" mode="screen" in2="composite"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle id="Elipse_1" data-name="Elipse 1" class="cls-1" cx="70.5" cy="72.5" r="65.5"/>
+  <path id="_FA" data-name="/FA" class="cls-2" d="M42.668,43.9L24.357,110.038h7.056L49.8,43.9H42.668Zm32.471,0H53.581v56.726h8.057V78.251H74.064V68.363H61.637V53.788h13.5V43.9Zm25.586,0H91.252L77.409,100.626h8.74l2.783-13h13.745l2.832,13h8.79ZM90.69,78.288l4.321-19.812a30.269,30.269,0,0,0,.659-4.8h0.22a31.752,31.752,0,0,0,.586,4.944l4.3,19.665H90.69Z"/>
+  <path id="_" data-name="&lt;" class="cls-3" d="M114.244,65.867l14.567,9v0.183l-14.567,9.674v7.507l20.325-14.862V72.428L114.244,58.359v7.507Z"/>
+  <path id="_2" data-name="&lt;" class="cls-3" d="M25.756,84.133l-14.567-9V74.948l14.567-9.674V57.766L5.431,72.628v4.944L25.756,91.641V84.133Z"/>
+</svg>

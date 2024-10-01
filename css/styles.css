@@ -1,0 +1,575 @@
+/* Geral */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  background: radial-gradient(50% 91.32% at 46.18% 50%, #E0FBFF 0%, #FFFFFF 100%);
+  font-family: 'Work Sans', sans-serif;
+  min-height: 100vh;
+}
+
+h3{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/*Icones social media cabeçalho*/
+.icons-social-media.social-cabecalho {
+  font-size: 28px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+
+.icons-social-media a {
+  color: #000;
+  transition: 0.5s;
+}
+
+
+.icons-social-media-cabecalho a:hover{
+  color: #062e70;
+}
+
+/* Cabeçalho */
+#header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Share Tech Mono', monospace;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+#header p {
+  font-size: 1.5rem;
+}
+
+/* Imagem */
+#container-img {
+  margin-top: 3rem;
+}
+
+#text {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 180px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200%;
+  text-transform: uppercase;
+  background-color:#000;
+  color: #FFF;
+  opacity: .7;
+}
+
+#text::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 20px solid #000;
+  left: -10px;
+
+}
+
+.foto{
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto;
+  background-image: url(../img/felipe.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 6rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Icones */
+#principal {
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-botao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px
+}
+
+.icon-botao i {
+  font-size: 70px;
+}
+
+.btn {
+  background-color: #0162F2;
+  width: 200px;
+  padding: 10px;
+  margin-top: 1rem;
+  margin: 2px;
+  color: #FFF;
+  text-align: center;
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color: #FFF;
+  box-sizing: border-box;
+  outline: 1px solid #0162F2;
+  color: #0162F2;
+  font-weight: bold;
+}
+
+/* Seção projetos */
+#projetos {
+  padding: 2rem;
+  position: relative;
+}
+
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.projetos-container img {
+  margin: 10px;
+  width: 350px;
+  height: 230px;
+  border-radius: 1.25rem;
+  box-shadow: 1px 1px 10px #777;
+}
+
+.title-projetos {
+  color: #000;
+}
+
+figcaption {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #5b37de;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: .5s;
+}
+
+figcaption:hover {
+  color:rgb(189, 189, 189);
+}
+
+.l2{
+  top: 562px;
+}
+
+#projeto-1 {
+  left: 175px;
+}
+
+#projeto-2 {
+  left: 545px;
+}
+
+.nome-projeto p {
+  text-align: center;
+  color: #FFF;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Competencias */
+#competencias {
+  padding: 2rem;
+}
+
+table{
+  width: 70%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgba(110, 7, 243, .85);
+}
+
+th {
+  font-size: 1.25rem;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.legendas {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  gap: 1rem;
+  font-weight: bold;
+  color: #d4d4d4;
+  text-transform: uppercase;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.legenda {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ult {
+  margin-right: 48px;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #FFF;
+}
+
+td{
+  margin-top: 2px;
+}
+
+td.tech {
+  background-color: #FFF;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.bi-check-circle-fill, .bi-circle-fill {
+  font-size: 1.875rem;
+  color: #14F201;
+}
+
+.bi-circle-fill {
+  color: #FFF;
+}
+
+td.circle{
+  width: 50%;
+  margin-right: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.download {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.download-curriculo {
+  border:none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.download-curriculo i{
+  font-size: 1rem;
+}
+
+/* Sobre */
+
+#sobre {
+  background-color: #6E07F3;
+  color: #FFF;
+  padding: 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: baseline;
+  gap: 3rem;  
+}
+.texto-sobre {
+  
+  flex-grow: 1;
+  flex-basis: 500px;
+  font-weight: 900;
+  padding: 2rem;
+  border-radius: 2.75rem;
+  background-color: #FFF;
+  color: #000;
+}
+
+.texto-sobre h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+ .texto-sobre i {
+  font-size: 2rem;
+}
+
+.texto-sobre p {
+  text-align: justify;
+  line-height: 25px;
+  text-indent: 40px;
+  
+}
+
+/* Link topo */
+
+#link-topo i{
+  text-decoration: none;
+  color: rgba(8, 1, 42, 0.404);
+  font-size: 3.8rem;
+  transition: .5s;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+
+#link-topo i:hover{
+  color: rgb(70, 70, 72);
+}
+
+/*Contato*/
+.footer-container {
+  margin-top: 3rem;
+}
+
+.contato-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contato-form input, textarea {
+  width: 50%;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid #062e70;
+  padding: 0 10px 0 10px;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  padding-top: 10px;
+  height: 180px;
+}
+
+input.btn.btn-form{
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  left: 0;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.icons-social-media {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.icons-social-media a{
+  color: #000;
+}
+
+.icons-social-media a:hover{
+  color: #6E07F3;
+}
+
+/*Copyright*/
+.copyright {
+  margin-top: 1.5rem;
+  padding: 5px 0 5px 0 ;
+  background-color: #6E07F3;
+  color: #FFF;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+
+ @media screen and (max-width: 900px) {
+  .sobre-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  * {
+    margin: auto 0;
+  }
+
+  .icons-social-media.social-cabecalho {
+    margin: auto 0;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 3%;
+  }
+
+  .text-header {
+    font-size: 1.3rem;
+  }
+
+  .text-header h1{
+    margin-bottom: 20px;
+  }
+
+  #header p{ 
+    font-size: 1.6rem;
+  }
+
+  .foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .icon-botao i {
+    display: none;
+  }
+
+  .btn {
+    width: 60%;
+    height: 55px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .title-projetos h3 {
+    font-size: 2rem;
+  }
+
+  #projetos {
+    padding-bottom: 0;
+  }
+
+  .projetos-container img {
+    width: 350px;
+    height: 230px;
+  }
+
+  .title-competencias {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tabela-competencias {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .download-curriculo {
+    height:auto;
+    font-size: 15px;
+  }
+
+  .texto-sobre {
+    width: 90%;
+  }
+
+  .contato-form {
+    width: 100%;
+  }
+
+  .contato-form input, textarea {
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+  .download-curriculo {
+    height: auto;
+  }
+
+  #text {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .text-header h1 {
+    line-height: 3rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+  }
+
+  table {
+    display: none;
+  }
+
+  .download-curriculo {
+    margin: 0 auto;
+    height: 75px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .title-competencias h3 {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .btn {
+    font-size: 1.1rem;
+  }
+
+  .texto-sobre h4 {
+    font-size: 1.1rem;
+  }
+
+  .texto-sobre p {
+    font-size: 0.9rem;
+  }
+}
