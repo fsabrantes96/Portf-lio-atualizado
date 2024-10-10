@@ -146,16 +146,48 @@ h3{
 #projetos {
   padding: 2rem;
   position: relative;
+  overflow: hidden;
 }
 
 .projetos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 1rem;
+  position: relative;
 }
 
-.projetos-container img {
+.projetos-container .btns {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 110px;
+  background-color: #062e70;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  z-index: 999;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.projetos-container .btns.swiper-button-disabled {
+  opacity: 0;
+}
+
+.btns.btn-prev{
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.btns.btn-next{
+  right: 0;
+}
+
+.btns:hover {
+  background-color: #70afe4;
+}
+
+.thumb {
   margin: 10px;
   width: 350px;
   height: 230px;
@@ -165,6 +197,14 @@ h3{
 
 .title-projetos {
   color: #000;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+div.swiper-slide {
+  display: flex;
 }
 
 figcaption {
@@ -428,6 +468,18 @@ input.btn.btn-form{
   .sobre-container {
     flex-wrap: wrap;
   }
+
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
+  button.btns.btns.btn-next, button.btns.btns.btn-prev{
+    display: none;
+  }
+
+  .btns img{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -454,6 +506,10 @@ input.btn.btn-form{
     font-size: 1.6rem;
   }
 
+  #text {
+    display: none;
+  }
+
   .foto {
     height: 200px;
     width: 200px;
@@ -462,6 +518,14 @@ input.btn.btn-form{
 
   .container {
     flex-direction: column;
+  }
+
+  button.btns.btns.btn-next, button.btns.btns.btn-prev{
+    display: none;
+  }
+
+  .btns img{
+    display: none;
   }
 
   .icon-botao i {
@@ -490,6 +554,10 @@ input.btn.btn-form{
     height: 230px;
   }
 
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
   .title-competencias {
     width: 100%;
     margin: 0 auto;
@@ -504,6 +572,11 @@ input.btn.btn-form{
     height:auto;
     font-size: 15px;
   }
+
+  .download a {
+    display: flex;
+    justify-content: flex-end;
+  }  
 
   .texto-sobre {
     width: 90%;
@@ -525,6 +598,23 @@ input.btn.btn-form{
     height: auto;
   }
 
+  .download a {
+    display: flex;
+    justify-content: flex-end;
+  }  
+
+  button.btns.btns.btn-next, button.btns.btns.btn-prev{
+    display: none;
+  }
+
+  .btns img{
+    display: none;
+  }
+  
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
   #text {
     display: none;
   }
@@ -540,8 +630,41 @@ input.btn.btn-form{
     line-height: 3rem;
   }
 
+  #projetos {
+    padding: 0;
+  }
+
+  .projetos-container {
+    padding: 0;
+  }
+
+  .swiper-slide.swiper-slide-active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
+  img.thumb{
+    margin: 0;
+  }
+
   .btn {
     font-size: 1.5rem;
+  }
+
+  button.btns.btns.btn-next, button.btns.btns.btn-prev{
+    display: none;
+  }
+
+  .btns img{
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: auto;
   }
 
   table {
@@ -555,14 +678,60 @@ input.btn.btn-form{
     width: 100%;
   }
 
+  .download {
+    justify-content: center;
+  }
+
   .title-competencias h3 {
     margin: 0 5px;
+  }
+
+  #sobre{
+    padding: 0;
+    padding-bottom: 5px;
+  }
+
+  .title-sobre{
+    padding-top: 5px;
+  }
+
+  .sobre-container {
+    margin: 10px;
   }
 }
 
 @media screen and (max-width: 350px) {
   .btn {
     font-size: 1.1rem;
+  }
+
+  #projetos {
+    padding: 0;
+  }
+
+  img.thumb{
+    margin: 0;
+  }
+
+  .swiper-slide.swiper-slide-active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+  }
+
+  .btns img{
+    display: none;
+  }
+
+  #sobre{
+    padding: 0;
+  }
+
+  .title-sobre{
+    margin-top: 5px;
   }
 
   .texto-sobre h4 {

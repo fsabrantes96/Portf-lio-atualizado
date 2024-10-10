@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Felipe Abrantes - Front-End Developer</title>
+    <!--Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Estilo -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -86,49 +88,88 @@
       <div class="title-projetos">
         <h3>Projetos Recentes</h3>
       </div>
+      <div class="swiper-pagination"></div>
       <div class="projetos-container">
-        <div class="img-projeto">
-          <a href="projeto-advocacia/index.html" class="link-img">
-            <img src="img/projeto-advocacia.jpg" alt="Projeto advocacia"/>
-            <figcaption>Página de Advocacia</figcaption>
-          </a>
+        <div class="slide-projetos">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="https://fsabrantes96.github.io/spider-man-project/" class="link-img">
+                <img class="thumb" src="img/thumb-04.jpg" alt="Projeto jogo Spider-Men"/>
+                <figcaption>Projeto jogo Spider-Men</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-advocacia/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-advocacia.jpg" alt="Projeto advocacia"/>
+                <figcaption>Página de Advocacia</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-plano-hospedagem/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-agencia.jpg" alt="Projeto agência"/>
+                <figcaption>Página de Planos de Hospedagem</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-decoracao/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-decoracao.jpg" alt="Projeto de Pagina de Decoração"/>
+                <figcaption>Página de Divulgação Evento de Decoração</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-whatsapp/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-whatsapp.jpg" alt="Projeto Colne Whatsapp"/>
+                <figcaption>Página Clone do Whatsapp</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-doceria/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-doceria.jpg" alt="Projeto doceria"/>
+                <figcaption>Página de Doceria</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="projeto-instagram/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-instagram.jpg" alt="Projeto Página Clone do Instagram"/>
+                <figcaption>Página Clone do Instagram</figcaption>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="Projeto-jogo-da-velha/index.html" class="link-img">
+                <img class="thumb" src="img/projeto-jogoDaVelha.png" alt="Projeto jogo da velha com Javascript"/>
+                <figcaption>Projeto jogo da velha com Javascript</figcaption>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="img-projeto">
-          <a href="projeto-plano-hospedagem/index.html" class="link-img">
-            <img src="img/projeto-agencia.jpg" alt="Projeto agência"/>
-            <figcaption>Página de Planos de Hospedagem</figcaption>
-          </a>
-        </div>
-        <div class="img-projeto">
-          <a href="projeto-decoracao/index.html" class="link-img">
-            <img src="img/projeto-decoracao.jpg" alt="Projeto de Pagina de Decoração"/>
-            <figcaption>Página de Divulgação Evento de Decoração</figcaption>
-          </a>
-        </div>
-        <div class="img-projeto">
-          <a href="projeto-whatsapp/index.html" class="link-img">
-            <img src="img/projeto-whatsapp.jpg" alt="Projeto Colne Whatsapp"/>
-            <figcaption>Página Clone do Whatsapp</figcaption>
-          </a>
-        </div>
-        <div class="img-projeto">
-          <a href="projeto-doceria/index.html" class="link-img">
-            <img src="img/projeto-doceria.jpg" alt="Projeto doceria"/>
-            <figcaption>Página de Doceria</figcaption>
-          </a>
-        </div>
-        <div class="img-projeto">
-          <a href="projeto-instagram/index.html" class="link-img">
-            <img src="img/projeto-instagram.jpg" alt="Projeto Página Clone do Instagram"/>
-            <figcaption>Página Clone do Instagram</figcaption>
-          </a>
-        </div>
-        <div class="img-projeto">
-          <a href="Projeto-jogo-da-velha/index.html" class="link-img">
-            <img src="img/projeto-jogoDaVelha.png" alt="Projeto jogo da velha com Javascript"/>
-            <figcaption>Projeto jogo da velha com Javascript</figcaption>
-          </a>
-        </div>
+        <button class="btns btn-prev">
+          <img src="img/arrow-slide.svg" alt="">
+        </button>
+        <button class="btns btn-next">
+          <img src="img/arrow-slide.svg" alt="">
+        </button>
+              
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
+              <div class="img-projeto">
+                
+              </div>
         <!--<div class="img-projeto">-->
         <!--  <a href="ProjetoJobFinder/views/index.handlebars" class="link-img">-->
         <!--    <img src="img/projeto-JobFinder.png" alt="Projeto site de vagas de emprego"/>-->
@@ -371,5 +412,7 @@
         <p>Desenvolvido por Felipe Abrantes - 2022</p>
       </div>
     </footer>
+    <!--Javascript Swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
