@@ -1,296 +1,391 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felipe Abrantes - Front-End Developer</title>
-    
-    <!-- Swiper JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
-    <!-- Estilo -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    
-    <!-- JavaScript -->
-    <script src="js/scripts.js" defer></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet" 
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Ícones Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  </head>
-
-  <body>
-    <!-- Mídias sociais -->
-    <div class="icons-social-media social-cabecalho" id="topo">
-      <abbr title="Ir para o Linkedin">
-        <a href="https://www.linkedin.com/in/abrantes96/" target="_blank">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </abbr>
-      <abbr title="Ir para o GitHub">
-        <a href="https://github.com/fsabrantes96" target="_blank">
-          <i class="bi bi-github"></i>
-        </a>
-      </abbr>
-    </div>
-
-    <!-- Cabeçalho -->
-    <header id="header">
-      <div class="text-header">
-        <h1>Front-End WEB Development</h1>
-        <p>Desenvolvedor em constante desenvolvimento</p>
-      </div>
-    </header>
-
-    <!-- Imagem -->
-    <section id="container-img">
-      <div class="foto" alt="Felipe Abrantes">
-        <div id="text"></div>
-      </div>
-    </section>
-
-    <!-- Menu -->
-    <main id="principal">
-      <div class="container">
-        <div class="icon-botao">
-          <i class="bi bi-columns-gap"></i>
-          <a href="#projetos" class="btn">Projetos</a>
-        </div>
-        <div class="icon-botao">
-          <i class="bi bi-person-check"></i>
-          <a href="#competencias" class="btn">Competências</a>
-        </div>
-        <div class="icon-botao">
-          <i class="bi bi-info"></i>
-          <a href="#sobre" class="btn">Sobre</a>
-        </div>
-        <div class="icon-botao">
-          <i class="bi bi-envelope"></i>
-          <a href="#contato" class="btn">Contato</a>
-        </div>
-      </div>
-    </main>
-
-    <!-- Projetos -->
-    <section id="projetos">
-      <div class="title-projetos">
-        <h3>Projetos Recentes</h3>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="projetos-container">
-        <div class="slide-projetos">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <a href="https://fsabrantes96.github.io/spider-man-project/" class="link-img">
-                <img class="thumb" src="img/thumb-04.jpg" alt="Projeto jogo Spider-Men"/>
-                <figcaption>Projeto jogo Spider-Men</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-advocacia/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-advocacia.jpg" alt="Projeto advocacia"/>
-                <figcaption>Página de Advocacia</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-plano-hospedagem/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-agencia.jpg" alt="Projeto agência"/>
-                <figcaption>Página de Planos de Hospedagem</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-decoracao/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-decoracao.jpg" alt="Projeto de Pagina de Decoração"/>
-                <figcaption>Página de Divulgação Evento de Decoração</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-whatsapp/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-whatsapp.jpg" alt="Projeto Clone Whatsapp"/>
-                <figcaption>Página Clone do Whatsapp</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-doceria/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-doceria.jpg" alt="Projeto doceria"/>
-                <figcaption>Página de Doceria</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="projeto-instagram/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-instagram.jpg" alt="Projeto Página Clone do Instagram"/>
-                <figcaption>Página Clone do Instagram</figcaption>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="Projeto-jogo-da-velha/index.html" class="link-img">
-                <img class="thumb" src="img/projeto-jogoDaVelha.png" alt="Projeto jogo da velha com Javascript"/>
-                <figcaption>Projeto jogo da velha com Javascript</figcaption>
-              </a>
-            </div>
-          </div>
-        </div>
-        <button class="btns btn-prev">
-          <img src="img/arrow-slide.svg" alt="Anterior">
-        </button>
-        <button class="btns btn-next">
-          <img src="img/arrow-slide.svg" alt="Próximo">
-        </button>
-      </div>
-    </section>
-
-    <!-- Competências -->
-    <section id="competencias">
-      <div class="title-competencias">
-        <h3>Tecnologias que possuo conhecimento e que estou estudando</h3>
-      </div>
-      <div class="tabela-competencias">
-        <table>
-          <thead>
-            <tr class="titulos-tabela">
-              <th class="t1">Ferramentas</th>
-              <th class="t2">Nível de conhecimento</th>
-            </tr>
-            <tr class="titulos-tabela legenda">
-              <td class="legendas" colspan="2">
-                <span id="iniciante">
-                  <abbr title="Nível de conhecimento iniciante">Ini <i class="bi bi-patch-question-fill"></i></abbr>
-                </span>
-                <span id="intermediario">
-                  <abbr title="Nível de conhecimento intermediário">Int <i class="bi bi-patch-question-fill"></i></abbr>
-                </span>
-                <span id="avancado">
-                  <abbr title="Nível de conhecimento avançado">Ava <i class="bi bi-patch-question-fill"></i></abbr>
-                </span>
-              </td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> Lógica de Programação</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> HTML 5</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> CSS 3</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> JavaScript</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> Node.js</td>
-              <td class="circle">
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> Git e GitHub</td>
-              <td class="circle">
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> Angular</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> React</td>
-              <td class="circle">
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-            <tr>
-              <td class="tech"><i class="bi bi-tag"></i> C# .NET Framework</td>
-              <td class="circle">
-                <i class="bi bi-check-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-                <i class="bi bi-circle-fill"></i>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="download">
-          <a href="arquivo/Curriculo-Felipe-2024.docx.pdf" download>
-            <button type="submit" class="btn download-curriculo">
-              Download Currículo
-              <i class="bi bi-file-earmark-arrow-down"></i>
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre">
-      <div class="title-sobre">
-        <h3>Um pouco sobre mim</h3>
-      </div>
-      <div class="sobre-container">
-        <div class="texto-sobre inicio">
-          <h4>Início <i class="bi bi-terminal"></i></h4>
-          <p>
-            Logo quando ingressei no ensino médio me surgiu a oportunidade de eu realizar o curso de técnico em informática integrado...
-          </p>
-        </div>
-        <div class="texto-sobre faculdade">
-          <h4>Faculdade de Análise e Desenvolvimento de Sistemas <i class="bi bi-laptop"></i></h4>
-          <p>
-            Atualmente estou cursando Análise e Desenvolvimento de Sistemas no mesmo lugar onde comecei com o curso técnico...
-          </p>
-        </div>
-        <div class="texto-sobre experiencia">
-          <h4>Experiências <i class="bi bi-person-workspace"></i></h4>
-          <p>
-            A minha experiência no setor de T.I começou como estagiário em uma empresa da minha cidade...
-          </p>
-        </div>
-      </div>
-    </section>
-  </body>
-</html>
+ <html lang="pt-br">
+   <head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Felipe Abrantes - Front-End Developer</title>
+     <!--Swiper JS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <!-- Estilo -->
+     <link rel="stylesheet" href="css/styles.css" />
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+     <!-- JavaScript -->
+     <script src="js/scripts.js" defer></script>
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+       rel="stylesheet" 
+     />
+ 
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&family=Share+Tech+Mono&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans&display=swap"
+       rel="stylesheet"
+     />
+     <!-- Icones Bootsrap -->
+     <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+     />
+     <!-- Icones Google -->
+   </head>
+   <body>
+     <!-- Mídias sociais -->
+     <div class="icons-social-media social-cabecalho" id="topo">
+       <abbr title="Ir para o Linkedin">
+         <a href="https://www.linkedin.com/in/abrantes96/" target="_blank">
+           <i class="bi bi-linkedin"></i>
+         </a>
+       </abbr>
+       <abbr title="Ir para o GitHub">
+         <a href="https://github.com/fsabrantes96" target="_blank">
+           <i class="bi bi-github"></i>
+         </a>
+       </abbr>
+     </div>
+     <!-- Cabeçalho -->
+     <header id="header">
+       <div class="text-header">
+         <h1>Front-End WEB Development</h1>
+         <p>Desenvolvedor em constante desenvolvimento</p>
+       </div>
+     </header>
+     <!-- TESTE -->
+     <!-- Imagem -->
+     <section id="container-img">
+       <div class="foto" alt="Felipe Abrantes">
+         <div id="text">
+         </div>
+       </div>
+     </section>
+     <!-- Menu -->
+     <main id="principal">
+       <div class="container">
+         <div class="icon-botao">
+           <i class="bi bi-columns-gap"></i>
+           <a href="#projetos" class="btn">Projetos</a>
+         </div>
+         <div class="icon-botao">
+           <i class="bi bi-person-check"></i>
+           <a href="#competencias" class="btn">Competências</a>
+         </div>
+         <div class="icon-botao">
+           <i class="bi bi-info"></i>
+           <a href="#sobre" class="btn">Sobre</a>
+         </div>
+         <div class="icon-botao">
+           <i class="bi bi-envelope"></i>
+           <a href="#contato" class="btn">Contato</a>
+         </div>
+       </div>
+     </main>
+     <!-- Projetos -->
+     <section id="projetos">
+       <div class="title-projetos">
+         <h3>Projetos Recentes</h3>
+       </div>
+       <div class="swiper-pagination"></div>
+       <div class="projetos-container">
+         <div class="slide-projetos">
+           <div class="swiper-wrapper">
+             <div class="swiper-slide">
+               <a href="https://fsabrantes96.github.io/spider-man-project/" class="link-img">
+                 <img class="thumb" src="img/thumb-04.jpg" alt="Projeto jogo Spider-Men"/>
+                 <figcaption>Projeto jogo Spider-Men</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-advocacia/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-advocacia.jpg" alt="Projeto advocacia"/>
+                 <figcaption>Página de Advocacia</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-plano-hospedagem/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-agencia.jpg" alt="Projeto agência"/>
+                 <figcaption>Página de Planos de Hospedagem</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-decoracao/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-decoracao.jpg" alt="Projeto de Pagina de Decoração"/>
+                 <figcaption>Página de Divulgação Evento de Decoração</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-whatsapp/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-whatsapp.jpg" alt="Projeto Colne Whatsapp"/>
+                 <figcaption>Página Clone do Whatsapp</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-doceria/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-doceria.jpg" alt="Projeto doceria"/>
+                 <figcaption>Página de Doceria</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="projeto-instagram/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-instagram.jpg" alt="Projeto Página Clone do Instagram"/>
+                 <figcaption>Página Clone do Instagram</figcaption>
+               </a>
+             </div>
+             <div class="swiper-slide">
+               <a href="Projeto-jogo-da-velha/index.html" class="link-img">
+                 <img class="thumb" src="img/projeto-jogoDaVelha.png" alt="Projeto jogo da velha com Javascript"/>
+                 <figcaption>Projeto jogo da velha com Javascript</figcaption>
+               </a>
+             </div>
+           </div>
+         </div>
+         <button class="btns btn-prev">
+           <img src="img/arrow-slide.svg" alt="">
+         </button>
+         <button class="btns btn-next">
+           <img src="img/arrow-slide.svg" alt="">
+         </button>
+       </div>
+     </section>
+     <section id="competencias">
+       <div class="title-competencias">
+         <h3>Tecnologias que possuo conhecimento e que estou estudando</h3>
+       </div>
+       <div class="tabela-competencias">
+         <table>
+           <thead>
+             <tr class="titulos-tabela">
+               <th class="t1">Ferramentas</th>
+               <th class="t2">Nível de conhecimento</th>
+             </tr>
+             <tr class="titulos-tabela legenda">
+               <td class="legendas">
+                 <span id="iniciante">
+                   <abbr title="Nível de conhecimento iniciante">Ini <i class="bi bi-patch-question-fill"></i>
+                   </abbr>
+                 </span>
+                 <span id="intermediario">
+                   <abbr title="Nível de conhecimento intermediário">Int <i class="bi bi-patch-question-fill"></i>
+                   </abbr>
+                 </span>
+                 <span id="avancado">
+                   <abbr title="Nível de conhecimento avançado">Ava <i class="bi bi-patch-question-fill"></i>
+                   </abbr>
+                 </span>
+               </td>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> Lógica de Programação</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+               <td class="tech"><i class="bi bi-tag"></i> HTML 5</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> CSS 3</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> JavaScript</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> Node.js</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi  bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> Git e GitHub</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> Angular</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> React</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+             <tr>
+               <td class="tech"><i class="bi bi-tag"></i> C# .NET Framework</td>
+               <div>
+                 <td class="circle">
+                   <i class="bi bi-check-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                   <i class="bi bi-circle-fill"></i>
+                 </td>
+               </div>
+             </tr>
+           </tbody>
+         </table>
+         <div class="download">
+           <a href="arquivo/Curriculo-Felipe-2024.docx.pdf" download>
+           <a href="arquivo/Curriculo.pdf" download>
+             <button type="submit" class="btn download-curriculo">
+               Download Curriculo
+               <i class="bi bi-file-earmark-arrow-down"></i>
+             </button>
+           </a>
+         </div>
+       </div>
+     </section>
+     <section id="sobre">
+       <div class="title-sobre">
+         <h3>Um pouco sobre mim</h3>
+       </div>
+       <div class="sobre-container">
+         <div class="texto-sobre inicio">
+           <h4>Início <i class="bi bi-terminal"></i></h4>
+           <p>
+             Logo quando ingressei no ensino médio me surgiu a oportunidade de eu realizar o curso de técnico em informática integrado,
+             me inscrevi para participar do processo seletivo e fui aprovado.
+             Logo no início foi um pouco estranho pois não eram matérias de fácil compreensão logo de cara,
+             pelo menos para mim, então foi na base de bastante esforço para que eu entendesse o que estava sendo ensinado no curso e com o tempo fui pegando gosto,
+             pois realizar uma tarefa e já conferir se está certo o que foi feito é algo que eu acho satisfatório,
+             e programação se resume em um pouco disso, você passa sua solução para o computador e já confere se é realmente aquilo que está sendo pedido.
+             Durante esse curso tive contato com linguagens de programação como portugol, C/C++, Java, PHP/Banco de Dados. Conheci o HTML e CSS através do curso.
+             Além disso também foram abordadas matérias de hardware, redes e desenvolvimento de projetos.
+           </p>
+         </div>
+         <div class="texto-sobre faculdade">
+           <h4>
+             Faculdade de Análise e Desenvolvimento de Sistemas
+             <i class="bi bi-laptop"></i>
+           </h4>
+           <p>
+             Atualmente estou cursando Análise e desenvolvimento de sistemas no mesmo lugar onde comecei com o curso técnico,
+             o Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Câmpus Boituva.
+             Neste curso é abordado muito sobre a Engenharia de Software, é ensinado todo o passo a passo desde o planejamento que
+             é passado nas matérias de Engenharia de Software, Analise Orientada a Objetos.
+             E também as ferramentas para se desenvolver esse software que são C, C#, PHP, Banco de dados.
+             Tive também aulas de sistemas operacionais, redes, Segurança da informação e também a parte mais visual que é a que eu mais 
+             gostei e a que quero seguir, como Interação humano computador, HTML/CSS e JavaScript ou seja a parte de 
+             desenvolvimento de interfaces, ou resumindo, desenvolvedor Front-End.
+           </p>
+         </div>
+         <div class="texto-sobre experiencia">
+           <h4>Experiências <i class="bi bi-person-workspace"></i></h4>
+           <p>
+             O minha experiência no setor de T.I começou como estagiário em uma empresa da minha cidade, lá eu auxiliava aos usuários quando eles tinham algum
+             problema ou dificuldade. Fiquei como estagiário por 11 meses até que eles ofereceram a efetivação e apesar de ser uma área que eu estava com dúvidas
+             se queria permanecer, já que eu não fazia nada relacionado com programação, eu quis me provar como o um dos responsáveis do setor, já que por não
+             ser uma empresa tão grande só havia eu e a gestora do setor, e realmente foi a época que eu mais aprendi e me desenvolvi ali dentro, mas como muitas
+             das vezes eram tarefas repetitivas eu resolvi não me acomodar e partir para um trabalho onde seria cobrado mais de mim.
+             Então quando completei 3 meses acabei saindo.<br/> Atualmente estou atuando na área de Governança
+             de T.I e PMO, pois foi a oportunidade que me apareceu enquanto estava estudando e em busca de uma nova colocação para trabalhar, mas o interesse por 
+             desenvolvimento ainda permanece e continuo estudando e pesquisando sobre e tentando melhorar como programador.
+           </p>
+         </div>
+       </div>
+     </section>
+     <div id="link-topo">
+       <abbr title="Ir para o topo da página">
+         <a href="#topo">
+           <i class="bi bi-arrow-up-square-fill"></i>
+         </a>
+       </abbr>
+     </div>
+     <!-- Contato -->
+     <footer>
+       <div class="footer-container">
+         <div class="contato-form" id="contato">
+           <div class="form-head">
+             <h3>Para mais informações entre em contato</h3>
+           </div>
+           <form action="./php/enviar-email.php" method="POST">
+             <input
+               type="text"
+               name="name"
+               id="name"
+               placeholder="Nome"
+               required
+             />
+             <input
+               type="email"
+               name="email"
+               id="email"
+               placeholder="E-mail"
+               required
+             />
+             <textarea
+               class="campo-texto"
+               name="message"
+               placeholder="Digite sua mensagem aqui..."
+               required
+             ></textarea>
+             <input type="submit" class="btn btn-form" value="Enviar" />
+           </form>
+         </div>
+         <div class="icons-social-media">
+           <abbr title="Ir para o Linkedin">
+             <a href="https://www.linkedin.com/in/abrantes96/">
+               <i class="bi bi-linkedin"></i>
+             </a>
+           </abbr>
+           <abbr title="Ir para o GitHub">
+             <a href="https://github.com/fsabrantes96">
+               <i class="bi bi-github"></i>
+             </a>
+           </abbr>
+         </div>
+       </div>
+       <div class="copyright">
+         <p>Desenvolvido por Felipe Abrantes - 2022</p>
+       </div>
+     </footer>
+     <!--Javascript Swiper-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   </body>
+ </html>
